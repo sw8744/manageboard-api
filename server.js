@@ -33,7 +33,7 @@ app.get('/mywriting', (req, res) => {
     }
 });
 
-app.get('/getwriting', (req, res) => {
+app.get('/get', (req, res) => {
     connection.query('SELECT * FROM posts', (err, results) => {
         res.json(results);
     });
